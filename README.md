@@ -14,4 +14,7 @@ Stores all 210 values of log10(data/model) (data = empirical flow rate; model = 
 Stores 1000 values of the random model flow rate for the Diatom-Simuliidae pair of the Glen Canyon network.
 
 ## histogram.py
-Code for generating a histogram from values of log10(data/model); also generates some statistics (e.g. RMS, Q1, Q3).
+Generates a histogram from values of log10(data/model); also generates some statistics (e.g. RMS, Q1, Q3).
+
+## random_glen.py
+Generates some statistics (mean, stdev, min, max) of random/model; hypothesis testing for how much empirical flow rate of Diatom-Simuliidae of the Glen Canyon network deviates from model prediction.
