@@ -95,7 +95,7 @@ Fglen = np.array([[1.558,	2.849,	1.388,	0.074,	44.595,	28.359,	0.818,	13.466],
 factglen = 1000 #factor to multiply to generate the multigraph when applying the modified configuration model to generate a random network
 
 #Forest streams (Bumpers et al. 2017); values are *per gut* values
-sheet = xlrd.open_workbook("potential energy flow data/forest streams energy flows.xlsx").sheet_by_index(1)
+sheet = xlrd.open_workbook("energy_flow_data/forest streams energy flows.xlsx").sheet_by_index(1)
 shape = (sheet.nrows-1, sheet.ncols-1)
 Fforest = np.empty(shape)
 for i in range(shape[0]):
@@ -110,7 +110,7 @@ while i < Fforest.shape[0]:
 factforest = 10
 
 #Coral reef (Cocheret de la Morinière et al. 2003) bay; values are *percentages*
-sheet = xlrd.open_workbook("potential energy flow data/coral reef energy flows.xlsx").sheet_by_index(0)
+sheet = xlrd.open_workbook("energy_flow_data/coral reef energy flows.xlsx").sheet_by_index(0)
 shape = (sheet.nrows-1, sheet.ncols-1)
 Fcoralbay = np.empty(shape)
 for i in range(shape[0]):
@@ -120,7 +120,7 @@ Fcoralbay = np.transpose(Fcoralbay)
 factcoralbay = 1
 
 #Coral reef (Cocheret de la Morinière et al. 2003) reef; values are *percentages*
-sheet = xlrd.open_workbook("potential energy flow data/coral reef energy flows.xlsx").sheet_by_index(1)
+sheet = xlrd.open_workbook("energy_flow_data/coral reef energy flows.xlsx").sheet_by_index(1)
 shape = (sheet.nrows-1, sheet.ncols-1)
 Fcoralreef = np.empty(shape)
 for i in range(shape[0]):
@@ -136,7 +136,7 @@ Fcoralreef = np.transpose(Fcoralreef)
 factcoralreef = 1
 
 #Crustacean (Rudnick & Resh 2005); values are *percentage abundances*
-sheet = xlrd.open_workbook("potential energy flow data/crustacean energy flows.xlsx").sheet_by_index(0)
+sheet = xlrd.open_workbook("energy_flow_data/crustacean energy flows.xlsx").sheet_by_index(0)
 shape = (sheet.nrows-1, sheet.ncols-1)
 Fcrust = np.empty(shape)
 for i in range(shape[0]):
