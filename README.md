@@ -13,6 +13,9 @@ Contains the data files that "graphing+numerical_sol.py" imports for graphing an
 ### log10_data_model.txt
 Stores all 210 values of log10(data/model) (data = empirical flow rate; model = MaxEnt model flow rate).
 
+### stability.py
+Generates random community matrices from 4 models of energy flow and produces the graphs showing the proportion of matrices that are stable.
+
 ### glen_diat_simul_random.txt
 Stores 1000 values of the random model flow rate for the Diatom-Simuliidae pair of the Glen Canyon network.
 
