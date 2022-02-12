@@ -7,7 +7,7 @@ All code was implemented in Python 3.
 
 To install the required dependencies, run the following command in your command line:
 ```
-pip install numpy scipy matplotlib
+pip install numpy scipy matplotlib xlrd
 ```
 
 ## Running the code
