@@ -1,5 +1,18 @@
 # network-flow-model
-Contains code used in the analysis of the project on modeling flow distribution in a bipartite flow network
+Contains code used in the analysis of the project on modeling flow distribution in a bipartite flow network.
+
+## Dependencies
+
+All code was implemented in Python 3.
+
+To install the required dependencies, run the following command in your command line:
+```
+pip install -r requirements.txt
+```
+
+## Running the code
+
+Simply run 
 
 ### stability.py
 Generates random community matrices from 4 models of energy flow and produces the graphs showing the proportion of matrices that are stable (Fig. 5 of Main Text). See section _Discussion: Stability_ of Main Text.
