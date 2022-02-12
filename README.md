@@ -10,9 +10,9 @@ To install the required dependencies, run the following command in your command 
 pip install numpy scipy matplotlib xlrd pandas xlsxwriter
 ```
 
-## Running the code
+## Code files
 
-Simply run 
+Each `.py` file is a standalone file that can be run on its own. Please see the detailed descriptions below.
 
 ### stability.py
 Generates random community matrices from 4 models of energy flow and produces the graphs showing the proportion of matrices that are stable (Fig. 5 of Main Text). See section _Discussion: Stability_ of Main Text.
