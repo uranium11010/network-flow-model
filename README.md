@@ -7,18 +7,12 @@ All code was implemented in Python 3.
 
 To install the required dependencies, run the following command in your command line:
 ```
-pip install numpy scipy matplotlib xlrd pandas xlsxwriter
+pip install numpy scipy matplotlib xlrd==1.2.0 pandas xlsxwriter
 ```
 
 ## Code files
 
 Each `.py` file is a standalone file that can be run on its own. Please see the detailed descriptions below.
-
-### stability.py
-Generates random community matrices from 4 models of energy flow and produces the graphs showing the proportion of matrices that are stable (Fig. 5 of Main Text). See section _Discussion: Stability_ of Main Text.
-
-### example_networks.py
-Generates model flow rates using Eq. 7b for example networks; produces the graphs Figs. 3a-d of Main Text.
 
 ### graphing+numerical_sol.py
 Contains code for
@@ -34,12 +28,6 @@ Stores all 210 values of log10(data/model) (data = empirical flow rate; model = 
 
 ### histogram.py
 Generates a histogram from values of log10(data/model) (Fig. 4 of Main Text); also generates some statistics (e.g. RMS, Q1, Q3). See section _Empirical Testing_ of Main Text.
-
-### glen_diat_simul_random.txt
-Stores 1000 values of the random model flow rate for the Diatom-Simuliidae pair of the Glen Canyon network from `graphing+numerical_sol.py`. See section _Discussion: Discovering Interaction-Specific Mechanisms_ of Main Text.
-
-### random_glen.py
-Generates some statistics (mean, stdev, min, max) of random/model from `glen_diat_simul_random.txt`; hypothesis testing for how much empirical flow rate of Diatom-Simuliidae of the Glen Canyon network deviates from model prediction. See section _Discussion: Discovering Interaction-Specific Mechanisms_ of Main Text.
 
 ## References
 

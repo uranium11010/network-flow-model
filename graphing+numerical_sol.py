@@ -197,7 +197,7 @@ factseaB = 2
 Flows = [Fglen, Fforest, Fcoralbay, Fcoralreef, Fcrust, Fworm, Fchesa, FcarA, FcarB, FcarC, FcarD, FcarE, FseaA, FseaB]
 factors = [factglen, factforest, factcoralbay, factcoralreef, factcrust, factworm, factchesa, factcarA, factcarB, factcarC, factcarD, factcarE, factseaA, factseaB]
 graphing = [False, False, False, False, False, False, False, False, False, False, False, False, False, False] #whether to graph log10(data/model)
-recordDataModel = False #record values of log10(data/model)
+recordDataModel = True #record values of log10(data/model)
 recordGlenRandomModel = False #record random model output for Diatom-Simuliid pair for Glen Canyon food web
 
 print("# networks:", len(Flows))
@@ -211,7 +211,7 @@ for k in range(len(Flows)):
     F = makeNested(Fns) #order species in decreasing degree
     print("# resources:", F.shape[0], "\t# consumers:", F.shape[1], "\t# linkages:", np.count_nonzero(F), "\tnested?", nested(F))
     
-    #calculate model flow rates by numerically solving Eq. 6ab of Main Text
+    #calculate model flow rates by numerically solving Eq. 4bc of Main Text
     L = F != 0
     dx = np.sum(F, axis=1)
     ey = np.sum(F, axis=0)
