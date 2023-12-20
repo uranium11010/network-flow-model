@@ -1,5 +1,17 @@
-# network-flow-model
-Contains code used in the analysis of the project on modeling flow distribution in a bipartite flow network.
+# Empirically testing a MaxEnt network flow model for a bipartite food web
+
+This is one of two repositories associated with the paper
+"Nestedness Promotes Stability in Maximum-Entropy Bipartite Food Webs" by Li and Harte, 2023.
+The other repository is located [https://github.com/uranium11010/nestedness-stability](here).
+
+If you use our code in your work, please cite our paper:
+```
+@article{li2023nestedness,
+  title={Nestedness Promotes Stability in Maximum-Entropy Bipartite Food Webs},
+  author={Li, Zhening and Harte, John},
+  year={2023}
+}
+```
 
 ## Dependencies
 
